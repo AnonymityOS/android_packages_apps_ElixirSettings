@@ -80,6 +80,13 @@
             android:fragment="com.elixir.settings.fragments.RecentsSettings"
             android:icon="@drawable/ic_settings_recents"/>
 
+        <!-- Transparency Porn -->
+        <PreferenceScreen
+            android:key="trans_porn"
+            android:title="@string/trans"
+            android:fragment="com.mrapocalypse.screwdshop.frags.TransparencyPornFragment"
+            android:icon="@drawable/ic_settings_miscs" />
+
         <!-- Notifications -->
         <PreferenceScreen
             android:key="notifications_category"
