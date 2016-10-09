@@ -36,6 +36,11 @@
             android:fragment="com.elixir.settings.fragments.StatusbarBatteryStyle" />
 
     <PreferenceScreen
+            android:key="batterybar"
+            android:title="@string/battery_bar_title"
+            android:fragment="com.elixir.settings.fragments.BatteryBar" />
+
+    <PreferenceScreen
             android:key="network_traffic_state"
             android:fragment="com.elixir.settings.fragments.NetworkTraffic"
             android:title="@string/network_traffic_title" />
@@ -61,4 +66,5 @@
             android:key="bluetooth_show_battery"
             android:title="@string/bluetooth_battery_title"
             android:summary="@string/bluetooth_battery_summary"/>
+
 </PreferenceScreen>
