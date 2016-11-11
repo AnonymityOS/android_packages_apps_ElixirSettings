@@ -84,7 +84,7 @@
         <PreferenceScreen
             android:key="trans_porn"
             android:title="@string/trans"
-            android:fragment="com.mrapocalypse.screwdshop.frags.TransparencyPornFragment"
+            android:fragment="com.elixir.settings.fragments.TransparencyPornFragment"
             android:icon="@drawable/ic_settings_miscs" />
 
         <!-- Notifications -->

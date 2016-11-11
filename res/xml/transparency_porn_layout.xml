@@ -18,9 +18,9 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceCategory
-        android:title="@string/qs">
+        android:title="@string/quicksettings_title">
 
-    com.elixir.settings.preferences.CustomSeekBarPreference 
+    <com.elixir.settings.preferences.CustomSeekBarPreference 
         android:key="qs_transparent_shade"
         android:title="@string/qs_transparent_shade"
         settings:max="255"
@@ -36,38 +36,38 @@
         android:entryValues="@array/qs_stroke_values"
         android:defaultValue="0" />
 
-    com.elixir.settings.preferences.ColorPickerPreference
+    <com.elixir.settings.preferences.ColorPickerPreference
         android:key="qs_stroke_color"
         android:title="@string/qs_stroke_color_title" />
 
-    com.elixir.settings.preferences.CustomSeekBarPreference 
+    <com.elixir.settings.preferences.CustomSeekBarPreference 
         android:key="qs_stroke_thickness"
         android:title="@string/qs_stroke_thickness_title"
-        android:max="25"
+        settings:max="25"
         settings:min="1"
         settings:units="px"
         android:persistent="false" />
 
-    com.elixir.settings.preferences.CustomSeekBarPreference 
+    <com.elixir.settings.preferences.CustomSeekBarPreference 
         android:key="qs_corner_radius"
         android:title="@string/qs_corner_radius_title"
-        android:max="50"
+        settings:max="50"
         settings:min="0"
         settings:units="px"
         android:persistent="false" />
 
-    com.elixir.settings.preferences.CustomSeekBarPreference 
+    <com.elixir.settings.preferences.CustomSeekBarPreference 
         android:key="qs_dash_width"
         android:title="@string/qs_dash_width_title"
-        android:max="50"
+        settings:max="50"
         settings:min="0"
         settings:units="px"
         android:persistent="false" />
 
-    com.elixir.settings.preferences.CustomSeekBarPreference 
+    <com.elixir.settings.preferences.CustomSeekBarPreference 
         android:key="qs_dash_gap"
         android:title="@string/qs_dash_gap_title"
-        android:max="50"
+        settings:max="50"
         settings:min="1"
         settings:units="px"
         android:persistent="false" />
@@ -77,7 +77,7 @@
    <PreferenceCategory
         android:title="@string/vol_dialog">
 
-    com.elixir.settings.preferences.CustomSeekBarPreference 
+    <com.elixir.settings.preferences.CustomSeekBarPreference 
         android:key="transparent_volume_dialog"
         android:title="@string/volume_dialog_transparency"
         settings:max="255"
@@ -93,59 +93,59 @@
         android:entryValues="@array/volume_dialog_stroke_values"
         android:defaultValue="0" />
 
-    com.elixir.settings.preferences.ColorPickerPreference
+    <com.elixir.settings.preferences.ColorPickerPreference
         android:key="volume_dialog_stroke_color"
         android:title="@string/volume_dialog_stroke_color_title"
         android:defaultValue="0xffffffff" />
 
-    com.elixir.settings.preferences.CustomSeekBarPreference 
+    <com.elixir.settings.preferences.CustomSeekBarPreference 
         android:key="volume_dialog_stroke_thickness"
         android:title="@string/volume_dialog_stroke_thickness_title"
-        android:max="25"
+        settings:max="25"
         settings:min="1"
         settings:units="px"
         android:persistent="false" />
 
-    com.elixir.settings.preferences.CustomSeekBarPreference 
+    <com.elixir.settings.preferences.CustomSeekBarPreference 
         android:key="volume_dialog_corner_radius"
         android:title="@string/volume_dialog_corner_radius_title"
-        android:max="50"
+        settings:max="50"
         settings:min="0"
         settings:units="px"
         android:persistent="false" />
 
-    com.elixir.settings.preferences.CustomSeekBarPreference 
+    <com.elixir.settings.preferences.CustomSeekBarPreference 
         android:key="volume_dialog_dash_width"
         android:title="@string/volume_dialog_dash_width_title"
-        android:max="50"
+        settings:max="50"
         settings:min="0"
         settings:units="px"
         android:persistent="false" />
 
-    com.elixir.settings.preferences.CustomSeekBarPreference 
+    <com.elixir.settings.preferences.CustomSeekBarPreference 
         android:key="volume_dialog_dash_gap"
         android:title="@string/volume_dialog_dash_gap_title"
-        android:max="50"
+        settings:max="50"
         settings:min="1"
         settings:units="px"
         android:persistent="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/powermenu">
+        android:title="@string/powermenu_title">
 
-    com.elixir.settings.preferences.CustomSeekBarPreference 
+    <com.elixir.settings.preferences.CustomSeekBarPreference 
         android:key="transparent_power_menu"
         android:title="@string/power_menu_transparency"
-        android:max="100"
+        settings:max="100"
         settings:min="0"
         settings:units="%"
         android:persistent="false" />
 
-    com.elixir.settings.preferences.CustomSeekBarPreference 
+    <com.elixir.settings.preferences.CustomSeekBarPreference 
         android:key="transparent_power_dialog_dim"
         android:title="@string/power_menu_dialog_dim"
-        android:max="100"
+        settings:max="100"
         settings:min="0"
         settings:units="%"
         android:persistent="false" />

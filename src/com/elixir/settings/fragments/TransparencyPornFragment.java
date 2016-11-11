@@ -74,7 +74,7 @@ public class TransparencyPornFragment extends SettingsPreferenceFragment impleme
             addPreferencesFromResource(R.xml.transparency_porn_layout);
 
             PreferenceScreen prefSet = getPreferenceScreen();
-            final ContentResolver resolver = getActivity().getContentResolver();
+            ContentResolver resolver = getActivity().getContentResolver();
 
             // QS shade alpha
             mQSShadeAlpha =
@@ -236,8 +236,8 @@ public class TransparencyPornFragment extends SettingsPreferenceFragment impleme
             mNotificationsAlpha.setValue(notificationsAlpha / 1);
             mNotificationsAlpha.setOnPreferenceChangeListener(this);*/
 
-            VolumeDialogSettingsDisabler(volumeDialogStroke);
-            QSSettingsDisabler(qSStroke);
+            //VolumeDialogSettingsDisabler(volumeDialogStroke);
+            //QSSettingsDisabler(qSStroke);
 
     }
 
@@ -275,7 +275,7 @@ public class TransparencyPornFragment extends SettingsPreferenceFragment impleme
             Settings.System.putIntForUser(resolver, Settings.System.
                     VOLUME_DIALOG_STROKE, volumeDialogStroke, UserHandle.USER_CURRENT);
             mVolumeDialogStroke.setSummary(mVolumeDialogStroke.getEntries()[index]);
-            VolumeDialogSettingsDisabler(volumeDialogStroke);
+            //VolumeDialogSettingsDisabler(volumeDialogStroke);
             return true;
         } else if (preference == mVolumeDialogStrokeColor) {
             String hexColor = String.format("#%08X", mVolumeDialogStrokeColor.getColor());
@@ -309,7 +309,7 @@ public class TransparencyPornFragment extends SettingsPreferenceFragment impleme
             Settings.System.putIntForUser(resolver, Settings.System.
                     QS_STROKE, qSStroke, UserHandle.USER_CURRENT);
             mQSStroke.setSummary(mQSStroke.getEntries()[index]);
-            QSSettingsDisabler(qSStroke);
+            //QSSettingsDisabler(qSStroke);
             return true;
         } else if (preference == mQSStrokeColor) {
             String hexColor = String.format("#%08X", mQSStrokeColor.getColor());
