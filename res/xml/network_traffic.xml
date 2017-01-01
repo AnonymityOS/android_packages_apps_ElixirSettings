@@ -26,7 +26,7 @@
                 android:entryValues="@array/show_network_traffic_frequency_values"
                 android:persistent="false" />
 
-        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        <com.elixir.settings.preferences.SystemSettingSwitchPreference
                 android:key="network_traffic_hidearrow"
                 android:title="@string/network_traffic_hidearrow_title"
                 android:summary="@string/network_traffic_hidearrow_summary"
@@ -38,7 +38,7 @@
                 android:summary="@string/network_traffic_autohide_summary"
                 android:defaultValue="false" />
 
-        <com.nitrogen.settings.preferences.CustomSeekBarPreference
+        <com.elixir.settings.preferences.CustomSeekBarPreference
                 android:key="network_traffic_autohide_threshold"
                 android:title="@string/network_traffic_autohide_threshold"
                 android:max="100"

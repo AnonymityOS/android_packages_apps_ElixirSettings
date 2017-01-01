@@ -29,19 +29,19 @@
             android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
     </PreferenceScreen>
 
-    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+    <com.elixir.settings.preferences.SystemSettingSwitchPreference
         android:key="lock_screen_show_weather"
         android:title="@string/weather_show_weather_title"
         android:summary="@string/weather_show_weather_summary" />
 
-    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+    <com.elixir.settings.preferences.SystemSettingSwitchPreference
         android:key="lock_screen_show_weather_location"
         android:title="@string/weather_show_location_title"
         android:summary="@string/weather_show_location_summary"
         android:defaultValue="true"
         android:dependency="lock_screen_show_weather" />
 
-    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+    <com.elixir.settings.preferences.SystemSettingSwitchPreference
         android:key="lock_screen_show_weather_timestamp"
         android:title="@string/weather_show_timestamp_title"
         android:summary="@string/weather_show_timestamp_summary"
@@ -68,7 +68,7 @@
             android:entryValues="@array/weather_hide_panel_values"
             android:dependency="lock_screen_show_weather" />
 
-        <com.nitrogen.settings.preferences.CustomSeekBarPreference
+        <com.elixir.settings.preferences.CustomSeekBarPreference
             android:key="weather_number_of_notifications"
             android:title="@string/weather_number_of_notifications_title"
             android:max="6"

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 Elixir OS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/lockscreen_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <PreferenceScreen
+        android:title="@string/lockscreen_targets_message" >
+        <intent
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.cm.LockscreenShortcutsActivity" />
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="lockscreen_weather"
+        android:title="@string/lock_screen_weather_settings_title"
+        android:fragment="com.elixir.settings.fragments.LockScreenWeatherSettings" />
+
+    <ListPreference
+        android:key="lock_clock_fonts"
+        android:title="@string/lock_clock_font_title"
+        android:dialogTitle="@string/lock_clock_font_title"
+        android:entries="@array/lock_clock_fonts_entries"
+        android:entryValues="@array/lock_clock_fonts_values"
+        android:summary="@string/lock_clock_font_summary"
+        android:persistent="false" />
+
+    <com.elixir.settings.preferences.SystemSettingSwitchPreference
+        android:key="keyguard_toggle_torch"
+        android:title="@string/keyguard_torch_title"
+        android:summary="@string/keyguard_torch_summary"
+        android:defaultValue="false" />
+
+    <com.elixir.settings.preferences.SystemSettingSwitchPreference
+        android:key="lockscreen_rotation"
+        android:title="@string/display_lockscreen_rotation_title"
+        android:defaultValue="false"/>
+
+    <com.elixir.settings.preferences.SystemSettingSwitchPreference
+        android:key="lockscreen_media_metadata"
+        android:title="@string/media_art_title"
+        android:summary="@string/media_art_summary"
+        android:defaultValue="true" />
+
+    <SwitchPreference
+        android:key="lockscreen_battery_info"
+        android:title="@string/lockscreen_battery_info_title"
+        android:summary="@string/lockscreen_battery_info_summary"
+        android:persistent="false" />
+
+    <SwitchPreference
+        android:key="fingerprint_success_vib"
+        android:title="@string/fprint_sucess_vib_title"
+        android:summary="@string/fprint_sucess_vib_summary"
+        android:persistent="false" />
+</PreferenceScreen>
