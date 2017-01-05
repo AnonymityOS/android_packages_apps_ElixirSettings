@@ -38,6 +38,12 @@
             android:fragment="com.elixir.settings.fragments.ButtonSettings"
             android:icon="@drawable/ic_settings_buttons"/>
 
+        <!-- Blur -->
+        <PreferenceScreen
+            android:fragment="com.elixir.settings.fragments.BlurPersonalizations"
+            android:key="blur_personalization"
+            android:title="@string/settings_blur_cat" />
+
         <!-- Navigation Bar -->
         <PreferenceScreen
             android:key="navigationbar_category"
