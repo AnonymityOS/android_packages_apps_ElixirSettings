@@ -40,9 +40,10 @@
 
         <!-- Blur -->
         <PreferenceScreen
-            android:fragment="com.elixir.settings.fragments.BlurPersonalizations"
             android:key="blur_personalization"
-            android:title="@string/settings_blur_cat" />
+            android:title="@string/settings_blur_cat"
+            android:fragment="com.elixir.settings.fragments.BlurPersonalizations" 
+            android:icon="@drawable/ic_settings_miscs"/>
 
         <!-- Navigation Bar -->
         <PreferenceScreen
