@@ -682,4 +682,7 @@
 
     <string name="systemui_recents_mem_display_title">Шкала использования ОЗУ</string>
     <string name="systemui_recents_mem_display_summary">Отображать шкалу использования ОЗУ в недавних приложениях</string>
+
+    <string name="smartbar_doubletap_sleep_title">Панель навигации</string>
+    <string name="smartbar_doubletap_sleep_summary">Дважды коснитесь панели навигации для перевода устройства в спящий режим</string>
 </resources>
