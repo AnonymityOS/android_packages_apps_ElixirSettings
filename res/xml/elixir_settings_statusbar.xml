@@ -67,7 +67,7 @@
             android:title="@string/bluetooth_battery_title"
             android:summary="@string/bluetooth_battery_summary"/>
 
-    <PreferenceScreen
+    <PreferenceCategory
             android:title="@string/status_bar_logo_category_title">
 
     <com.elixir.settings.preferences.SystemSettingSwitchPreference
@@ -80,6 +80,8 @@
             android:title="@string/status_bar_elixir_logo_color"
             android:defaultValue="0xffffffff"
             android:dependency="status_bar_elixir_logo" />
+ 
+     </PreferenceCategory>
 
        <ListPreference
             android:key="status_bar_elixir_logo_style"
